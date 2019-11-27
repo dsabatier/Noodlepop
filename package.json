@@ -1,0 +1,7 @@
+{
+    "name": "com.dsabatier.noodlepop",
+    "displayName": "Noodlepop",
+    "version": "0.1.0",
+    "unity": "2018.3",
+    "description": "A collection of game agnostic utilities"
+}
