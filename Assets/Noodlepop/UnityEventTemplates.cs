@@ -16,4 +16,5 @@ using UnityEngine.Events;
 [Serializable] public class IntUnityEvent : UnityEvent<int> { }
 [Serializable] public class FloatUnityEvent : UnityEvent<float> { }
 [Serializable] public class RayUnityEvent : UnityEvent<Ray> { }
+[Serializable] public class GameObjectUnityEvent : UnityEvent<GameObject> { }
 #endregion
