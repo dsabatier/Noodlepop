@@ -1,18 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Noodlepop.GameEvents;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Vector2GameEventListener : MonoBehaviour
+public class Vector2GameEventListener : GameEventListener<Vector2>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Vector2UnityEvent _unityEvent;
+    protected override UnityEvent<Vector2> _onInvoke => _unityEvent;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private Vector2GameEvent _event;
+    protected override GameEvent<Vector2> _gameEvent => _event;
 }
