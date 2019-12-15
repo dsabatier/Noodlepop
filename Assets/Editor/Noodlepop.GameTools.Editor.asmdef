@@ -1,0 +1,17 @@
+{
+    "name": "Noodlepop.GameToolsEditor",
+    "references": [
+        "GUID:2ca7d28b663e793488804a097afa51b2"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

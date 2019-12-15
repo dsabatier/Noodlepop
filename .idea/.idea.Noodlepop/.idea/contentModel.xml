@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\dsaba\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\dsaba\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Noodlepop.-1789186522.00" t="ExcludeRecursive" />
+    <e p="D:\Game Dev\Unity\Noodlepop" t="IncludeRecursive">
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="Audio" t="Include">
+            <e p="Audio Events" t="Include">
+              <e p="Editor" t="Include">
+                <e p="AudioEventEditor.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Game Events" t="Include">
+            <e p="GameEventBaseEditor.cs" t="Include" />
+          </e>
+          <e p="Noodlepop.GameTools.Editor.asmdef" t="Include" />
+          <e p="Utility" t="Include">
+            <e p="LayerAttribute" t="Include">
+              <e p="LayerAttributeEditor.cs" t="Include" />
+            </e>
+            <e p="RangedFloatDrawer" t="Include">
+              <e p="RangedFloatDrawer.cs" t="Include" />
+            </e>
+            <e p="TagAttribute" t="Include">
+              <e p="TagAttributeEditor.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Runtime" t="Include">
+          <e p="Audio" t="Include">
+            <e p="Audio Events" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="AudioEvent.cs" t="Include" />
+                <e p="CompositeAudioEvent.cs" t="Include" />
+                <e p="RotatingAudioEvent.cs" t="Include" />
+                <e p="SimpleAudioEvent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="AudioMixerExtensions.cs" t="Include" />
+            <e p="AudioMixManager.cs" t="Include" />
+          </e>
+          <e p="Common Gameplay" t="Include">
+            <e p="DepletableStat" t="Include">
+              <e p="DepletableStat.cs" t="Include" />
+              <e p="IntDepletableStat.cs" t="Include" />
+            </e>
+          </e>
+          <e p="FSM" t="Include">
+            <e p="FiniteStateMachine.cs" t="Include" />
+            <e p="IState.cs" t="Include" />
+          </e>
+          <e p="Game Events" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="GameEventBase.cs" t="Include" />
+              <e p="GameEventListenerBase.cs" t="Include" />
+              <e p="IntGameEvent.cs" t="Include" />
+              <e p="IntGameEventListener.cs" t="Include" />
+              <e p="SimpleGameEvent.cs" t="Include" />
+              <e p="SimpleGameEventListener.cs" t="Include" />
+              <e p="StringGameEvent.cs" t="Include" />
+              <e p="StringGameEventListener.cs" t="Include" />
+              <e p="Vector2GameEvent.cs" t="Include" />
+              <e p="Vector2GameEventListener.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Noodlepop.GameTools.Runtime.asmdef" t="Include" />
+          <e p="ParticleSystemEvent" t="Include">
+            <e p="ParticleSystemEvent.cs" t="Include" />
+            <e p="SimpleParticleSystemEvent.cs" t="Include" />
+          </e>
+          <e p="Singleton Pattern" t="Include">
+            <e p="Singleton.cs" t="Include" />
+          </e>
+          <e p="UnityEventTemplates.cs" t="Include" />
+          <e p="Utility" t="Include">
+            <e p="Extensions.cs" t="Include" />
+            <e p="LayerAttribute" t="Include">
+              <e p="LayerAttribute.cs" t="Include" />
+            </e>
+            <e p="RangedFloat" t="Include">
+              <e p="MinMaxRangeAttribute.cs" t="Include" />
+              <e p="RangedFloat.cs" t="Include" />
+            </e>
+            <e p="TagAttribute" t="Include">
+              <e p="TagAttribute.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Variable Assets" t="Include">
+            <e p="BoolVariable.cs" t="Include" />
+            <e p="FloatVariable.cs" t="Include" />
+            <e p="IntDepletableVariable.cs" t="Include" />
+            <e p="IntVariable.cs" t="Include" />
+            <e p="RigidbodyVariable.cs" t="Include" />
+            <e p="SpriteVariable.cs" t="Include" />
+            <e p="StringListVariable.cs" t="Include" />
+            <e p="VariableAsset.cs" t="Include" />
+            <e p="Vector2Variable.cs" t="Include" />
+            <e p="Vector3Variable.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Noodlepop.GameTools.csproj" t="IncludeRecursive" />
+      <e p="Noodlepop.GameToolsEditor.csproj" t="IncludeRecursive" />
+      <e p="Noodlepop.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
