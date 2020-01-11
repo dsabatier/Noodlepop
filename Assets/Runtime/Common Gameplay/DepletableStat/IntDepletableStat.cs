@@ -13,12 +13,23 @@ namespace Noodlepop
         {
             if (Max < 0)
                 return;
+
+            if (_amount == Max)
+                return;
             
-            _amount += Math.Min(amount, Max);
-            RaiseAddedEvent(amount);
+            _amount += amount;
             
-            if(_amount >= Max)
-                RaiseOnReplenishedEvent(); 
+            if (_amount >= Max)
+            {
+                _amount = Max;
+                
+                RaiseAddedEvent(amount);
+                RaiseOnReplenishedEvent();
+            }
+            else
+            {
+                RaiseAddedEvent(amount);
+            }
         }
         
         public override void Remove(int amount)
@@ -26,12 +37,22 @@ namespace Noodlepop
             if (Max < 0)
                 return;
             
-            _amount = Math.Max(0, _amount - amount);
-            
-            RaiseRemovedEvent(amount);
+            if(_amount == 0)
+                return;
 
-            if (_amount == 0)
+            _amount -= amount;
+            
+            if (_amount <= 0)
+            {
+                _amount = 0;
+                
+                RaiseRemovedEvent(amount);
                 RaiseDepletedEvent();
+            }
+            else
+            {
+                RaiseRemovedEvent(amount);
+            }
         }
 
         public void Deplete()
