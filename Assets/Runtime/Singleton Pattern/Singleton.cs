@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Noodlepop.SingletonPattern
 {
@@ -12,9 +10,7 @@ namespace Noodlepop.SingletonPattern
     {
         private static T _instance;
         protected static T Instance => _instance;
-
-        public static bool IsInitialized => _instance != null;
-
+        
         protected virtual void Awake()
         {
             if (_instance != null)
