@@ -14,10 +14,16 @@ namespace Noodlepop
             if (Max < 0)
                 return;
 
-            _amount += Math.Min(amount, Max);
+            if (_amount == Max)
+                return;
+            
+            _amount += amount;
             
             if (_amount >= Max)
             {
+                _amount = Max;
+                
+                RaiseAddedEvent(amount);
                 RaiseOnReplenishedEvent();
             }
             else
@@ -31,10 +37,15 @@ namespace Noodlepop
             if (Max < 0)
                 return;
             
-            _amount = Math.Max(0, _amount - amount);
+            if(_amount == 0)
+                return;
+
+            _amount -= amount;
             
-            if (_amount == 0)
+            if (_amount <= 0)
             {
+                _amount = 0;
+                
                 RaiseRemovedEvent(amount);
                 RaiseDepletedEvent();
             }
