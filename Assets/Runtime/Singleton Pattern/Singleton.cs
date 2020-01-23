@@ -9,7 +9,21 @@ namespace Noodlepop.SingletonPattern
     public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         private static T _instance;
-        protected static T Instance => _instance;
+
+        protected static T Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    T newSingleton = new GameObject().AddComponent<T>();
+                    newSingleton.gameObject.name = $"New {typeof(T)} (Lazy Load)";
+                    _instance = newSingleton;
+                }
+                
+                return _instance;
+            }
+        }
         
         protected virtual void Awake()
         {
