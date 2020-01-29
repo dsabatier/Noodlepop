@@ -66,5 +66,4 @@ public class DrawHelper
     {
         DrawBox(center, size, color, duration, false);
     }
-    
 }
