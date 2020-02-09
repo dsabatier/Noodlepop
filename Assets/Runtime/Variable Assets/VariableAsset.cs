@@ -10,6 +10,8 @@ namespace Noodlepop.VariableAssets
     /// <typeparam name="T"></typeparam>
     public abstract class VariableAsset<T> : ScriptableObject
     {
+        public event Action<T, T> OnValueChanged = (oldValue, newValue) => { };
+        
         [SerializeField] protected bool _readOnly = false;
         [SerializeField] protected T _defaultValue;
         [SerializeField] protected T _value;
@@ -30,6 +32,9 @@ namespace Noodlepop.VariableAssets
                 {
                     if(_owner)
                         throw new Exception($"[VariableAsset] This asset is locked and can only be modified by component: {_owner.name}");
+
+                    if (!_value.Equals(value))
+                        OnValueChanged(_value, value);
                     
                     _value = value;
                 }
